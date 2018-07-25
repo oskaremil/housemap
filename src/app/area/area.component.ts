@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area.component.css']
 })
 export class AreaComponent implements OnInit {
-
+  minValue: 4;
+  maxValue: 100;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  get isValidArea: boolean{
+      
   }
 
 }

@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  areaMaxValue: 100,
+  areaMinValue: 4
 };

@@ -2,20 +2,23 @@
     <div class="col-auto">
         <p>Enter max size for the construction area:</p>
     </div>
+    
+</div>
+<div class="row">
     <div class="col-auto">
-        <input type="number" class="form-control" [min]="minValue" [max]="maxValue">
+        <input type="number" class="form-control" [(ngModel)]="valueX" [min]="minValue" [max]="maxValue">
     </div>
     <div class="col-auto">
         <p>x</p>
-        </div>
-        <div class="col-auto">
-        
-                <input type="number" class="form-control" [min]="minValue" [max]="maxValue">
-            </div>
-            <div class="col-auto">
-                <button class="form-control">Generate</button>
-            </div>
+    </div>
+    <div class="col-auto">
+
+        <input type="number" class="form-control" [(ngModel)]="valueY" [min]="minValue" [max]="maxValue">
+    </div>
+    <div class="col-auto">
+        <button class="form-control" [disabled]="!isValidArea" (click)="generateTemplateArea()">Generate</button>
+    </div>
 </div>
-<div class="alert alert-info" role="alert">
-    area works!
-</div>>
+<div class="row">
+    <app-area-grid [template]="areaGridTemplate"></app-area-grid>
+</div>

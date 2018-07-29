@@ -4,12 +4,14 @@ import { AppComponent } from './app.component';
 import { AreaComponent } from './area/area.component';
 import { FormsModule } from '@angular/forms';
 import { AreaGridComponent } from './area-grid/area-grid.component';
+import { GridCellComponent } from './grid-cell/grid-cell.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AreaComponent,
-    AreaGridComponent
+    AreaGridComponent,
+    GridCellComponent
   ],
   imports: [
     BrowserModule,

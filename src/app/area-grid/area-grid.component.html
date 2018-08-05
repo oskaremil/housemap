@@ -1,6 +1,5 @@
 <div class="container-fluid">
-  <div class="row" *ngFor="let rows of cells">
+  <div class="d-flex align-content-stretch align-items-stretch flex-wrap" *ngFor="let rows of cells">
       <app-grid-cell *ngFor="let cell of rows" [cellConfig]="cell"></app-grid-cell>
   </div> 
-  
 </div>
